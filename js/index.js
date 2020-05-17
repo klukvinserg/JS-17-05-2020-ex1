@@ -11,7 +11,7 @@ function getStyle(arr) {
 }
 
 function myMouseenter() {
-  let str = document.getElementById(event.path[0].firstChild.id);
+  let str = document.getElementById(event.path[0].id);
   if (str.innerHTML.includes("http://") || str.innerHTML.includes("https://")) {
     str.style.color = "blue";
     str.style.borderBottom = "blue solid 1px";
@@ -19,7 +19,7 @@ function myMouseenter() {
 }
 
 function myMouseleave() {
-  let str = document.getElementById(event.path[0].firstChild.id);
+  let str = document.getElementById(event.path[0].id);
   if (str.innerHTML.includes("http://") || str.innerHTML.includes("https://")) {
     str.style.color = "rebeccapurple";
     str.style.borderBottom = "rebeccapurple dashed 1px";
